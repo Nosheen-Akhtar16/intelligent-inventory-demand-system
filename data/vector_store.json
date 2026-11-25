@@ -1,0 +1,46 @@
+{
+  "chunks": [
+    {
+      "chunk_id": "01_reorder_policy_c0",
+      "source": "01_reorder_policy.md",
+      "text": "# StockPilot AI Inventory Reorder Policy\n1. Reorder Quantity Formula: Recommended Reorder Quantity = max(0, ceil((Forecast_7D_Demand * 1.2) - (Current_Inventory + Incoming_Orders))).\n2. Safety Factor: A standard 1.2x (20% buffer) safety factor protects against normal daily demand volatility.\n3. Inventory Coverage: Inventory Coverage (in days) equals Net Available Stock divided by Forecast Daily Demand. It measures how many days current and incoming stock will last."
+    },
+    {
+      "chunk_id": "02_decision_thresholds_c0",
+      "source": "02_decision_thresholds.md",
+      "text": "# Stockout Risk & Inventory Decision Engine Rules\n- URGENT REORDER: Triggered when Stockout Probability >= 0.70 OR Inventory Coverage < 1.6 days (with positive reorder gap).\n- REORDER: Triggered when Stockout Probability >= 0.50 (AT_RISK) OR Inventory Coverage < 2.6 days.\n- MONITOR: Triggered when Stockout Probability is between 0.30 and 0.49 OR Inventory Coverage < 3.8 days.\n- HOLD: Triggered when product is SAFE with Inventory Coverage >= 3.8 days and low stockout probability."
+    },
+    {
+      "chunk_id": "03_sustainability_sdg12_c0",
+      "source": "03_sustainability_sdg12.md",
+      "text": "# Sustainability Intelligence Layer & UN SDG-12 Alignment\nStockPilot AI aligns with UN Sustainable Development Goal 12 (Responsible Consumption and Production) by detecting overstock (coverage > 4.2 days or Net Available > 1.15x Target Stock) and flagging potential waste risk\u2014especially in perishable categories like Groceries. Note: Metrics are inventory-based operational indicators, not measured carbon or physical waste reductions."
+    },
+    {
+      "chunk_id": "04_responsible_ai_hitl_c0",
+      "source": "04_responsible_ai_hitl.md",
+      "text": "# Responsible AI & Human-in-the-Loop Governance\nAll AI forecasts, stockout risk classifications (SAFE / AT_RISK), and reorder recommendations operate strictly as human-in-the-loop decision support. No purchase order is ever placed automatically without explicit human manager approval."
+    }
+  ],
+  "embeddings": [
+    [
+      0.8643929826272198,
+      -0.3297001373034994,
+      -0.37963477923017946
+    ],
+    [
+      0.8920564410295512,
+      0.06414428736304038,
+      -0.44734862321160024
+    ],
+    [
+      0.44432369480526984,
+      -0.3373193040100233,
+      0.8299350102798172
+    ],
+    [
+      0.3285621900613938,
+      0.9117765524965493,
+      0.2463947752153717
+    ]
+  ]
+}

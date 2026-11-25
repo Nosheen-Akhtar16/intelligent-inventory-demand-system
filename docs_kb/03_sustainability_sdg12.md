@@ -1,0 +1,2 @@
+# Sustainability Intelligence Layer & UN SDG-12 Alignment
+StockPilot AI aligns with UN Sustainable Development Goal 12 (Responsible Consumption and Production) by detecting overstock (coverage > 4.2 days or Net Available > 1.15x Target Stock) and flagging potential waste risk—especially in perishable categories like Groceries. Note: Metrics are inventory-based operational indicators, not measured carbon or physical waste reductions.

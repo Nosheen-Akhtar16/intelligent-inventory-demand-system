@@ -1,0 +1,2 @@
+# Responsible AI & Human-in-the-Loop Governance
+All AI forecasts, stockout risk classifications (SAFE / AT_RISK), and reorder recommendations operate strictly as human-in-the-loop decision support. No purchase order is ever placed automatically without explicit human manager approval.
